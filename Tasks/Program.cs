@@ -26,17 +26,19 @@ namespace ConsoleApp1
             //}Console.WriteLine(arr[0]);//Print first element because sorteder array first element is minumum 
             #endregion
             #region task 2
-            //string name = Console.ReadLine();//Input string
-            //char[] arr = name.ToCharArray();//Change array to char 
-            //foreach (char item in arr)//Check each letter 
-            //{
-            //    if (item == 'a')
-            //    {
-            //        Console.WriteLine("there is a letter in the text");
-            //        break;
-            //    }
-            //    else Console.WriteLine("there is't letter in the text"); break;
-            //}
+            string name = Console.ReadLine();//Input string
+            char[] arr = name.ToCharArray();//Change array to char 
+            bool hasA = false;
+            foreach (char item in arr)//Check each letter 
+            {
+                if (item == 'a')
+                {
+                    hasA = true;
+                    break;
+                }
+             
+            }if (hasA) Console.WriteLine("A simbol have ");
+            else Console.WriteLine("A simbol have not");
             #endregion
         }
 
